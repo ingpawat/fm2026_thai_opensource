@@ -42,22 +42,7 @@ gunzip *.gz
 ls -la *.ltf *.ltc
 ```
 
-#### ขั้นตอนที่ 4: ตั้งค่า Environment Variable
-
-```bash
-# เพิ่ม API Key ของ Claude
-export ANTHROPIC_API_KEY="your_api_key_here"
-```
-
-#### ขั้นตอนที่ 5: เริ่มแปล
-
-```bash
-# ดูรายละเอียด prompt จาก prompt.md
-cat prompt.md
-
-# เรียกใช้ AI ในการแปล fm2026_thai_opensource.ltf
-python3 translate.py fm2026_thai_opensource.ltf
-```
+จากนี้ไป คิดเอาเองว่าจะแปล fm2026_thai_opensource.ltf ได้ยังไง!
 
 ---
 
@@ -94,63 +79,7 @@ cd fm2026_thai_opensource
 # https://www.7-zip.org/
 ```
 
-#### ขั้นตอนที่ 5: ตั้งค่า Environment Variable
-
-```cmd
-# ใน PowerShell
-$env:ANTHROPIC_API_KEY="your_api_key_here"
-
-# ใน Command Prompt
-set ANTHROPIC_API_KEY=your_api_key_here
-```
-
-#### ขั้นตอนที่ 6: เริ่มแปล
-
-```cmd
-# ดูรายละเอียด prompt
-type prompt.md
-
-# เรียกใช้ AI ในการแปล
-python translate.py fm2026_thai_opensource.ltf
-```
-
----
-
-## ✏️ ขั้นตอนการแปล
-
-### macOS
-
-1. **เปิดไฟล์เพื่อแตกสำรวจ**
-   ```bash
-   cat fm2026_thai_opensource.ltf | head -50
-   ```
-
-2. **เริ่มแปลใช้ AI**
-   ```bash
-   python3 translate.py fm2026_thai_opensource.ltf --ai-translate
-   ```
-
-3. **ตรวจสอบและแก้ไขไฟล์**
-   - เปิดไฟล์ในเอดิเตอร์โปรดของคุณ
-   - ตรวจสอบการแปล
-   - แก้ไขคำที่ไม่ถูกต้อง
-
-### Windows
-
-1. **เปิดไฟล์เพื่อแตกสำรวจ**
-   ```cmd
-   type fm2026_thai_opensource.ltf | more
-   ```
-
-2. **เริ่มแปลใช้ AI**
-   ```cmd
-   python translate.py fm2026_thai_opensource.ltf --ai-translate
-   ```
-
-3. **ตรวจสอบและแก้ไขไฟล์**
-   - เปิดไฟล์ในเอดิเตอร์ (Notepad++ หรือ Visual Studio Code แนะนำ)
-   - ตรวจสอบการแปล
-   - แก้ไขคำที่ไม่ถูกต้อง
+จากนี้ไป คิดเอาเองว่าจะแปล fm2026_thai_opensource.ltf ได้ยังไง!
 
 ---
 
@@ -249,33 +178,6 @@ fm2026_thai_opensource/
 
 ---
 
-## 🤖 การใช้ AI ในการแปล
-
-### ข้อมูลเพิ่มเติมเกี่ยวกับ prompt.md
-
-```bash
-# ดูรายละเอียด prompt
-cat prompt.md
-
-# Copy prompt เพื่อใช้กับ Claude
-cat prompt.md | pbcopy  # macOS
-cat prompt.md | clip    # Windows (PowerShell)
-```
-
-### ตัวอย่าง Prompt
-
-prompt.md ควรมีลักษณะดังนี้:
-
-```
-Translate the following Football Manager 2026 Thai localization file to Thai.
-Keep all formatting, variable names, and structure intact.
-Only translate the text content.
-
-[File content here]
-```
-
----
-
 ## ⚠️ สิ่งที่ต้องระวัง
 
 - ✅ **ให้แน่ใจว่า** แก้ไขเฉพาะเนื้อหาที่แปลเท่านั้น
@@ -295,14 +197,30 @@ Only translate the text content.
 
 ---
 
-## 📞 ติดต่อและความช่วยเหลือ
+## 📄 License
 
-ถ้ามีปัญหา:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-1. ตรวจสอบ [Issues](https://github.com/ingpawat/fm2026_thai_opensource/issues)
-2. สร้าง Issue ใหม่พร้อมรายละเอียด
-3. ติดต่อผู้ดูแล Repository
+```
+MIT License
 
----
+Copyright (c) 2024 ingpawat
 
-**สุดท้าย: ขอบคุณสำหรับการมีส่วนร่วมในการแปล FM2026 เป็นภาษาไทย! 🇹🇭**
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
