@@ -1,0 +1,2 @@
+*.ltf filter=lfs diff=lfs merge=lfs -text
+*.ltc filter=lfs diff=lfs merge=lfs -text
