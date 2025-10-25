@@ -1,14 +1,11 @@
 # FM2026 Thai Language Pack
 
-สำหรับการแปล Football Manager 2026 เป็นภาษาไทย โดยใช้ AI ในการช่วยแปล
-
+สำหรับการแปล Football Manager 2026 เป็นภาษาไทย 
 ---
 
 ## 📋 ข้อกำหนดเบื้องต้น
 
 - Git
-- Python 3.8+ (สำหรับการประมวลผล prompt.md)
-- API Key จาก Claude (สำหรับการใช้ AI)
 - Terminal/Command Prompt
 
 ---
@@ -42,7 +39,6 @@ gunzip *.gz
 ls -la *.ltf *.ltc
 ```
 
-จากนี้ไป คิดเอาเองว่าจะแปล fm2026_thai_opensource.ltf ได้ยังไง!
 
 ---
 
@@ -79,7 +75,6 @@ cd fm2026_thai_opensource
 # https://www.7-zip.org/
 ```
 
-จากนี้ไป คิดเอาเองว่าจะแปล fm2026_thai_opensource.ltf ได้ยังไง!
 
 ---
 
